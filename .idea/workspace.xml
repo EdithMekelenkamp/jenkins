@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="added steps">
+    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="mvn install">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
@@ -65,12 +65,20 @@
       <option name="project" value="LOCAL" />
       <updated>1687784894669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mvn install">
+      <created>1687785989077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687785989077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Jenkinsfile" />
     <MESSAGE value="added steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="added steps" />
+    <MESSAGE value="mvn install" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvn install" />
   </component>
 </project>
