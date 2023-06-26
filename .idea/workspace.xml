@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="mvn install">
+    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="added tools">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687785989077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added tools">
+      <created>1687786123680</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687786123680</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Jenkinsfile" />
     <MESSAGE value="added steps" />
     <MESSAGE value="mvn install" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvn install" />
+    <MESSAGE value="added tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tools" />
   </component>
 </project>
