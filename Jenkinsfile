@@ -19,6 +19,7 @@ pipeline {
             steps{
                 echo 'building the application...'
                 sh 'mvn clean install'
+                sh 'mvn package -DskipTests=true'
             }
         }
         stage("test"){
