@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    <list default="true" id="708285a5-3d8e-4471-91a3-be998fbe90da" name="Changes" comment="added Jenkinsfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,18 @@
       <option name="presentableId" value="Default" />
       <updated>1687782381389</updated>
     </task>
+    <task id="LOCAL-00001" summary="added Jenkinsfile">
+      <created>1687784532074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687784532074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added Jenkinsfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Jenkinsfile" />
   </component>
 </project>
