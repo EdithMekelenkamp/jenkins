@@ -18,14 +18,18 @@ pipeline {
         stage("build"){
             steps{
                 echo 'building the application...'
-                sh 'mvn clean install'
-                sh 'mvn package -DskipTests=true'
+                sh 'mvn clean compile'
             }
         }
         stage("test"){
             steps{
                 echo 'testing the application...'
                 sh 'mvn test'
+            }
+        }
+        stage("packaging"){
+            steps{
+                sh 'mvn package -DskipTests'
             }
         }
         stage("publish"){
