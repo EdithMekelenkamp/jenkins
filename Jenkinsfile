@@ -4,12 +4,13 @@ pipeline {
     tools {
             maven 'Maven 3.8.6'
             jdk 'jdk17'
+            scannerHome 'SonarQubeScanner'
      }
 
      environment {
              NEXUS_VERSION = "nexus3"
              NEXUS_PROTOCOL = "http"
-             NEXUS_URL = "bridge:8081"
+             NEXUS_URL = "172.17.0.1:8081"
              NEXUS_REPOSITORY = "maven-nexus-repo"
              NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
          }
@@ -64,6 +65,16 @@ pipeline {
                     } else {
                         error "*** File: ${artifactPath}, could not be found";
                     }
+                }
+            }
+        }
+        stage("sonarqube"){
+            steps{
+                withSonarQubeEnv('sonarqube') {
+                            sh "${scannerHome}/bin/sonar-scanner"
+                }
+                timeout(time: 10, unit: 'MINUTES') {
+                    waitForQualityGate abortPipeline: true
                 }
             }
         }
