@@ -4,7 +4,7 @@ pipeline {
     tools {
             maven 'Maven 3.8.6'
             jdk 'jdk17'
-            scannerHome 'SonarQubeScanner'
+//             scannerHome 'SonarQubeScanner'
      }
 
      environment {
@@ -69,6 +69,9 @@ pipeline {
             }
         }
         stage("sonarqube"){
+            environment {
+                scannerHome = tool 'SonarQubeScanner'
+            }
             steps{
                 withSonarQubeEnv('sonarqube') {
                             sh "${scannerHome}/bin/sonar-scanner"
