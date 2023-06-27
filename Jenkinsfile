@@ -33,6 +33,7 @@ pipeline {
                 sh 'mvn package -DskipTests'
             }
         }
+
         stage("publish"){
             steps{
                 script{
@@ -68,15 +69,15 @@ pipeline {
                 }
             }
         }
-        stage("sonarqube"){
-            steps{
-                withSonarQubeEnv('sonarqube') {
-                            sh "${scannerHome}/bin/sonar-scanner"
-                }
-                timeout(time: 10, unit: 'MINUTES') {
-                    waitForQualityGate abortPipeline: true
-                }
-            }
-        }
     }
+         stage("sonarqube"){
+             steps{
+                 withSonarQubeEnv('sonarqube') {
+                             sh "${scannerHome}/bin/sonar-scanner"
+                 }
+                 timeout(time: 10, unit: 'MINUTES') {
+                     waitForQualityGate abortPipeline: true
+                 }
+             }
+         }
 }
