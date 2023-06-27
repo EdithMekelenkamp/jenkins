@@ -4,7 +4,6 @@ pipeline {
     tools {
             maven 'Maven 3.8.6'
             jdk 'jdk17'
-            scannerHome 'SonarQubeScanner'
      }
 
      environment {
@@ -33,7 +32,6 @@ pipeline {
                 sh 'mvn package -DskipTests'
             }
         }
-
         stage("publish"){
             steps{
                 script{
@@ -69,15 +67,7 @@ pipeline {
                 }
             }
         }
+        stage("sonarqube"){
+        }
     }
-         stage("sonarqube"){
-             steps{
-                 withSonarQubeEnv('sonarqube') {
-                             sh "${scannerHome}/bin/sonar-scanner"
-                 }
-                 timeout(time: 10, unit: 'MINUTES') {
-                     waitForQualityGate abortPipeline: true
-                 }
-             }
-         }
 }
