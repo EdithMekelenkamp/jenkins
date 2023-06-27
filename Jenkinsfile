@@ -67,7 +67,5 @@ pipeline {
                 }
             }
         }
-        stage("sonarqube"){
-        }
     }
 }
