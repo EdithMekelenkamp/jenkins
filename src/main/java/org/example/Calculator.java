@@ -1,7 +1,7 @@
 package org.example;
 
 public class Calculator {
-    public int Calculate(int i, int j){
+    public int calculate(int i, int j){
         return i + j;
     }
 }
