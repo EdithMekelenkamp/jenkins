@@ -3,9 +3,6 @@ package org.example;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-
-import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
@@ -17,6 +14,6 @@ public class CalculatorTest {
     }
     @Test
     public void test(){
-        Assertions.assertEquals(20, calculator.Calculate(10, 10));
+        Assertions.assertEquals(20, calculator.calculate(10, 10));
     }
 }
