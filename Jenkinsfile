@@ -31,7 +31,7 @@ pipeline {
             steps{
                 sh 'cd src/test/robotframework'
                 sh 'python3 -m robot.run .'
-                sh 'robocop'
+                sh 'robocop --reports rules_by_id'
             }
         }
         stage("packaging"){

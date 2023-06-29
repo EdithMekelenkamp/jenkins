@@ -2,6 +2,7 @@
 Documentation   Open a browser test case
 Library         SeleniumLibrary
 
+
 *** Variables ***
 ${TEXT}         Hello world
 ${URL}          https://www.example.com
