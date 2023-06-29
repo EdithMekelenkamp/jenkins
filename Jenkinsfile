@@ -31,6 +31,7 @@ pipeline {
             steps{
                 sh 'cd src/test/robotframework'
                 sh 'python3 -m robot.run .'
+                sh 'robocop'
             }
         }
         stage("packaging"){
@@ -79,7 +80,6 @@ pipeline {
             }
             steps{
                 withSonarQubeEnv('sonarqube') {
-//                            sh "${scannerHome}/bin/sonar-scanner"
                     sh "mvn sonar:sonar"
                 }
                 timeout(time: 10, unit: 'MINUTES') {
