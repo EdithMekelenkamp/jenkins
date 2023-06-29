@@ -27,6 +27,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage("robotframework test"){
+            steps{
+                sh 'cd src\test\robotframework'
+                sh 'robot .'
+            }
+        }
         stage("packaging"){
             steps{
                 sh 'mvn package -DskipTests'
