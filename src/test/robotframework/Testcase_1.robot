@@ -1,14 +1,11 @@
 *** Settings ***
-Documentation
-...    Login Test Case.
+Documentation   Open a browser test case
+Library         SeleniumLibrary
 
-
-***Variables***
-${Browser}  Chrome
-${URL}  https://google.com/
-Library    Selenium2Library
+*** Variables ***
+${TEXT}         Hello world
+${URL}          https://www.example.com
 
 *** Test Cases ***
-TC_001 Browser Start and Close
-	Open Browser  https://google.com    ff
-	Close Browser
+Log Test
+    Log To Console    ${TEXT}
