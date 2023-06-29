@@ -29,7 +29,7 @@ pipeline {
         }
         stage("robotframework test"){
             steps{
-                sh 'cd src\test\robotframework'
+                sh 'cd src/test/robotframework'
                 sh 'robot .'
             }
         }
