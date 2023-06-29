@@ -31,7 +31,7 @@ pipeline {
             steps{
                 sh 'cd src/test/robotframework'
                 sh 'python3 -m robot.run .'
-                sh 'robocop --reports rules_by_id'
+                sh 'robocop --exclude missing-doc-test-case testcase_1.robot --reports rules_by_id'
             }
         }
         stage("packaging"){

@@ -7,6 +7,7 @@ Library         SeleniumLibrary
 ${TEXT}         Hello world
 ${URL}          https://www.example.com
 
+
 *** Test Cases ***
 Log Test
     Log To Console    ${TEXT}
