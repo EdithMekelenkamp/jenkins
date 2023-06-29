@@ -30,7 +30,7 @@ pipeline {
         stage("robotframework test"){
             steps{
                 sh 'cd src/test/robotframework'
-                sh 'robot .'
+                sh 'python3 -m robot.run .'
             }
         }
         stage("packaging"){
