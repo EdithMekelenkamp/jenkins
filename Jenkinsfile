@@ -30,6 +30,7 @@ pipeline {
         stage("robotframework test"){
             steps{
                 sh 'cd src/test/robotframework'
+                echo "Script executed from: ${PWD}"
                 sh 'python3 -m robot.run .'
                 sh 'robocop --exclude missing-doc-test-case testcase_1.robot --reports rules_by_id'
             }
