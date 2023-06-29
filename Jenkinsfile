@@ -32,7 +32,7 @@ pipeline {
                 sh 'cd src/test/robotframework'
                 echo "Script executed from: ${PWD}"
                 sh 'python3 -m robot.run .'
-                sh 'robocop --exclude missing-doc-test-case src/test/robotframework/testcase_1.robot --reports rules_by_id'
+                sh 'robocop --exclude missing-doc-test-case ./src/test/robotframework/testcase_1.robot --reports rules_by_id'
             }
         }
         stage("packaging"){
