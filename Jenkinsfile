@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        dockerContainer { image 'maven:3.6.3-jdk-8'}
-    }
+    agent any
 
     tools {
             maven 'Maven 3.8.6'
